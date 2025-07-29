@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splendour Art - Interior Art Studio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .hero-gradient {
+          background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(196, 164, 132, 0.7);
+        }
+        70% {
+          transform: scale(1.02);
+          box-shadow: 0 0 0 10px rgba(196, 164, 132, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(196, 164, 132, 0);
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C4A484",
+              secondary: "#1B4B73",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+            fontSize: {
+              'xs': '0.75rem',
+              'sm': '0.875rem',
+              'base': '1rem',
+              'lg': '1.125rem',
+              'xl': '1.25rem',
+              '2xl': '1.5rem',
+              '3xl': '1.875rem',
+              '4xl': '2.25rem',
+              '5xl': '3rem',
+              '6xl': '4rem',
+            }
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-['Cormorant_Garamond']">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md"
+    >
+      <nav class="flex items-center justify-between px-4 md:px-8 py-4">
+        <a href="#" class="h-8 md:h-10">
+          <img src="logo.jpg" alt="Splendour Art Logo" class="h-full">
+        </a>
+        <div class="flex items-center gap-4 md:gap-8 text-sm md:text-lg">
+          <a href="#main" class="hover:text-primary transition-colors duration-300">Main</a>
+          <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+          <a href="#works" class="hover:text-primary transition-colors duration-300">Catalog</a>
+          <a href="#contacts" class="hover:text-primary transition-colors duration-300">Contacts</a>
+        </div>
+      </nav>
+    </header>
+    <section
+      id="main"
+      class="relative min-h-screen flex items-center"
+      style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20interior%20design%20studio%20with%20elegant%20furniture%20and%20decor%2C%20soft%20natural%20lighting%20coming%20from%20large%20windows%2C%20neutral%20color%20palette%20with%20gold%20accents%2C%20high-end%20modern%20aesthetic%2C%20clean%20lines%20and%20minimalist%20approach%2C%20professional%20photography%20style&width=1920&height=1080&seq=1&orientation=landscape')"
+    >
+      <div class="absolute inset-0 hero-gradient"></div>
+      <div class="container mx-auto px-4 md:px-8 relative">
+        <div class="max-w-2xl">
+          <p class="text-primary text-base md:text-lg mb-2">Inspired by the splendor of creation, guided by eternal light</p>
+          <h1 class="text-3xl md:text-5xl font-['Playfair_Display'] font-bold mb-4 md:mb-6">
+            Splendour Art — Bespoke Interior Masterpieces
+          </h1>
+          <p class="text-base md:text-xl mb-6 md:mb-8 font-light">
+            Transform your space into a timeless masterpiece with our bespoke artistic creations. Each piece is meticulously crafted to elevate your interior's aesthetic to new heights.
+          </p>
+          <a
+            href="#contacts"
+            class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300 pulse inline-block"
+          >
+          Commission Your Art
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold mb-6 md:mb-8">
+              About Us
+            </h2>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Inspired by the Splendour of Creation, Guided by Eternal Light
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Splendour Art is an interior art studio founded by artist Anastasia Temkina.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              At the heart of our work lies the belief that beauty can carry spirit — that form, texture, and light can become vessels for meaning.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Each piece is created with an intuitive attention to that delicate threshold where the physical meets the eternal, and where materials begin to speak without words.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Our studio creates bespoke decorative artworks — from classical paintings and textured wall panels to intricate, one-of-a-kind compositions in advanced mixed media.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              We work with plaster, mirrors, gold leaf, glass painting, glaze, semi-precious stones, Swarovski crystals, and cubic zirconia, combining these elements to craft pieces that exist as single originals — never repeated.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              We produce works of any size, from intimate accents to large-scale panels that replicate the natural splendour of stone slices, tailored to complement both private and public interiors.
+            </p>
+            <p class="text-base md:text-lg mb-6 md:mb-8">
+              Every commissioned artwork is developed in close dialogue with the client. Together, we select tones, finishes, and materials, ensuring that the final piece resonates not only with the space, but with the person who will live alongside it.
+            </p>
+            <p class="text-base md:text-lg mb-6 md:mb-8">
+              One of our studio's distinct features is the creation of art suitable for humid Asian climates. A protective glazed finish allows the artworks to be placed in moist environments — such as bathrooms or spa areas — and remain pristine for decades.
+            </p>
+            <div class="grid grid-cols-3 gap-4 md:gap-8">
+              <div class="text-center">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-palette-line text-xl md:text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Unique design</h3>
+              </div>
+              <div class="text-center">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-brush-line text-xl md:text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Handmade work</h3>
+              </div>
+              <div class="text-center">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-star-line text-xl md:text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Premium quality</h3>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-1 md:order-2 mb-8 md:mb-0">
+            <div class="relative rounded-lg overflow-hidden aspect-square">
+              <img
+                src="Главный фон.jpg"
+                alt="Anastasia Temkina"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="py-12 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold text-center mb-8 md:mb-16">
+          Our work
+        </h2>
+        
+        <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-6 md:mb-8 text-center">Mixed Media</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\1.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">The Hidden Strength
+
+                Small yet mighty, shaped by faith — the bonsai stands as a symbol of resilience born in stillness.
+               
+               Gypsum , gilding , semi precious stones ( green aventurine ,jade ,malachite , peridot ) glaze , crystals , lustrous steel edging .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\2.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Refined by fire 
+
+                Growth is often born from trials, shining brighter after the fire.
+                
+                Gypsum , Gilding , Crystal Shards, crushed mirror , finely cut crystals , glaze , lustrous steel gilding .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\3.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Breath of Light
+
+                Your word is a lamp to my feet and a light to my path.
+                
+                
+                Textures, mirror , gilding , Swarovski crystals , glaze , lustrous steel edging .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\4.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">The Hidden Flame
+
+                There is beauty that cannot be seen in the light — only known in the silence.
+                
+                Textures, mirror , gilding , Swarovski crystals , glaze , lustrous steel edging .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\5.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Eternal Embrace
+
+                Two are better than one, because they have a good return for their labor.
+                
+                Mirror , sculpture art , crystals , glaze , lustrous steel edging .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\6.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Tree of Still Waters
+
+                Stillness is where the soul finds its truest reflection.
+                
+                Gypsum, gilding , Swarovski , terahertz , glaze ,Lustrous steel edging.</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\7.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Come To Me 
+
+                Come to me, all who are weary and burdened, and I will give you rest . 
+                
+                Texture , gilding , Lustrous steel edging</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\8.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Soar on Wings
+
+                But those who hope in the Lord will renew their strength. They will soar on wings like eagles.
+                
+                Gypsum, mirror , Swarovski ,  crystal shards, glaze , Lustrous steel edging.</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="midex media\9.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Star of Bethlehem
+
+                A single light can guide the way through the darkest night.
+                
+                Mirror , crystal shards , Swarovski, cubic Zirconia, glaze , Lustrous steel edging</p>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-6 md:mb-8 text-center">Texture Art</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/1.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Inner Peace
+                In quietness and confidence shall be your strength.
+             
+             Texture , gilding .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/2.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">The Gentle Giant
+
+                Gentleness is not weakness, but power under divine control.
+                
+                Texture , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/3.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Formed in Peace
+
+
+                No sharp edges, no rush. Just the silent beauty of being shaped by the hands of peace.
+                
+                Texture , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/4.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Quiet Foundation
+
+                He is like a man building a house, who dug deep and laid the foundation on the rock.
+                
+                Texture , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/5.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Grace in Bloom
+
+                The wilderness will rejoice and blossom like the crocus. It will burst into bloom; it will rejoice greatly and shout for joy . 
+                
+                Texture , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/6.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">The earth remembers 
+
+                For He knows how we are formed, He remembers that we are dust. 
+                
+                Texture , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/7.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Whispers of Nature
+
+
+                Minimalist shapes speak softly — a dialogue between the tangible and the intangible, inviting reflection on presence and absence.
+                
+                Gypsum , dry wall art</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/8.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Golden Vortex
+
+
+                A spiral of energy and motion, capturing the dance between chaos and harmony — a reminder that transformation often swirls unseen beneath calm surfaces.
+                
+                Texture , gilding , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/9.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Threefold Silence
+
+
+                Three tones. Three presences. No noise, just balance — a quiet composition where contrast becomes conversation.
+                
+                Texture , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/10.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Dawn Within
+
+                The lower depths hold the silence of oceans. Above — a gentle light begins to spread. This is not just a landscape, but a feeling: of something awakening inside.
+                
+                Texture , gilding , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/11.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Orbit of thought 
+
+
+                A visual rhythm of contemplation — broad, deliberate, then increasingly refined. Each curve marks a layer of awareness, until the weight of meaning settles in silence.
+                
+                
+                Texture , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/12.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Uneven Truth
+
+                No surface is ever uniform. One part speaks with intensity, the other listens in stillness. Together, they reveal how depth often hides in the subtle imbalance.
+                
+                Texture , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/13.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Layers of Becoming
+
+                Earth remembers what we forget. Every crack, every shade holds the trace of time — compressed, weathered, yet quietly alive. This is not just texture — it’s history in stillness.
+                
+                
+                Texture , gilding , acrylic .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/14.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Echoes of Amber 
+
+                A pattern of echoes — steady, measured, endless. Like memories preserved in amber, the design holds space for reflection and presence.
+                
+                Texture , acrylic</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="texture/15.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Reflection of the Soul 
+
+
+                Love one another as I have loved you. 
+                
+                Texture , acrylic .</p>
+            </div>
+          </div>
+         
+
+        </div>
+        
+        <div class="text-center mt-8 md:mt-12">
+          <a
+            href="#contacts"
+            class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300 inline-block"
+          >
+          Commission Your Art
+          </a>
+        </div>
+        <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-6 md:mb-8 text-center">Resin Art</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/1.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Noir Lumen 
+
+                From depths of shadow arises a radiant spark. The interplay of monochrome and gold reflects the eternal balance between struggle and grace — a reminder that true light shines strongest through contrast.
+                
+                Resin , gilding , crystals shards .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/2.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Etched in Earth 
+
+
+                The forest stands still, but the road remembers every step. A journey etched in layers of earth and spirit.
+                
+                Texture , gilding , crystals shards , resin .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/3.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">In the Ember’s  wake 
+
+                In the dark, the ember of change begins to glow. Each layer a record of becoming.
+                
+                Resin , gilding , crystals .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/4.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Celestial Core 
+
+                Where opposites meet, a hidden center is revealed — the still point in the turning world. This work speaks of inner alignment, the mystery of unity through contrast, and the quiet force at the heart of all becoming.
+                
+                Resin , crystals .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/5.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Fields of the Unfolding Heart 
+
+                There is a place where the soul rests, heals, and begins again — not by force, but by the gentle rhythm of what was always meant to bloom.
+                
+                Resin , crystals</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/6.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Daughter of the Still Wind
+
+                She blooms quietly, rooted in depth, lifted by light.
+                
+                Resin , crystals shards , semi precious stones .</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/7.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">Veil of Early Light
+
+                Soft and unspoken, this light doesn’t shout. It awakens. It reveals what is ready to rise.
+                
+                Resin , texture</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="resin/8.jpg"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <p class="text-white text-lg md:text-xl">The Weight of Wonder
+
+                What seems heavy may hold hidden beauty. Within the darkest strata, light finds its finest edge.
+                
+                Resin , crystals shards .</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8 md:mt-12">
+          <a
+            href="#contacts"
+            class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300 inline-block"
+          >
+          Commission Your Art
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold mb-6 md:mb-8">
+              For Interior Designers
+            </h2>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              We don’t just create paintings — we create accents.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              You shape the space. We bring in the imagery that gives it soul.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              If you’re looking for art that speaks, reflects meaning, and enhances atmosphere — we’re here for it.
+            </p>
+            <div class="grid grid-cols-3 gap-4 md:gap-8">
+              <div class="text-center">
+                <h3 class="font-semibold text-sm md:text-base mb-2">Exclusive trade discounts</h3>
+              </div>
+              <div class="text-center">
+                <h3 class="font-semibold text-sm md:text-base mb-2">Flexible artwork curation for your project</h3>
+              </div>
+              <div class="text-center">
+                <h3 class="font-semibold text-sm md:text-base mb-2">Bespoke creations tailored to your concept</h3>
+              </div>
+              <p class="text-base md:text-lg mb-4 md:mb-6">
+                Design spaces with character.
+              </p>
+              Let art speak for you.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-1 md:order-2 mb-8 md:mb-0">
+            <div class="relative rounded-lg overflow-hidden aspect-square">
+              <img
+                src="preview.png"
+                alt="Anastasia Temkina"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold text-center mb-8 md:mb-16">
+          Contact us
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <form id="contact-form" class="space-y-4 md:space-y-6">
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                required
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                rows="4"
+                required
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300"
+              >
+              Send
+              </button>
+            </div>
+            <div id="form-message" class="text-center hidden"></div>
+          </form>
+          
+          <div class="mt-8 md:mt-16 text-center">
+            <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-4 md:mb-6">Or contact us directly</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 items-center">
+              <a href="mailto:Splendour.art.sg@gmail.com" class="flex items-center gap-2 hover:text-primary transition-colors duration-300 text-base md:text-lg">
+                <i class="ri-mail-line text-xl md:text-2xl"></i>
+                <span>Splendour.art.sg@gmail.com</span>
+              </a>
+              <a href="https://wa.me/+6580104004" class="flex items-center gap-2 hover:text-primary transition-colors duration-300 text-base md:text-lg">
+                <i class="ri-whatsapp-line text-xl md:text-2xl"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 md:py-12">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-6 md:mb-8">
+          <a href="#" class="inline-block h-8 md:h-12">
+            <img src="logo.jpg" alt="Splendour Art Logo" class="h-full">
+          </a>
+        </div>
+        <div class="flex justify-center gap-4 md:gap-6 mb-6 md:mb-8">
+          <a href="https://www.instagram.com/splendour_art_sg?igsh=dGpsY3RuNjh4M2Mw&utm_source=qr" class="hover:text-primary transition-colors duration-300">
+            <i class="ri-instagram-line text-lg md:text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors duration-300">
+            <i class="ri-facebook-line text-lg md:text-xl"></i>
+          </a>
+          <a href="https://www.pinterest.com/splendourartsg/" class="hover:text-primary transition-colors duration-300">
+            <i class="ri-pinterest-line text-lg md:text-xl"></i>
+          </a>
+        </div>
+        <div class="text-center text-gray-400 text-sm md:text-base">
+          <p>&copy; 2025 Splendour Art. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Header shadow on scroll
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 0) {
+            header.classList.add("shadow-md");
+          } else {
+            header.classList.remove("shadow-md");
+          }
+        });
+
+        // Telegram notification function
+        async function sendToTelegram(formData) {
+          const botToken = '8127455848:AAGYCJwa2ATZ_vijbBqhbSSVlXAacJ2B8x0'; // Замените на ваш токен бота
+          const chatId = '7873914635'; // Замените на ваш chat ID
+          
+          const message = `
+            <b>Новая заявка с сайта Splendour Art</b>\n
+            <b>Имя:</b> ${formData.get('name')}\n
+            <b>Email:</b> ${formData.get('email')}\n
+            <b>Сообщение:</b> ${formData.get('message')}
+          `;
+          
+          try {
+            const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: 'HTML'
+              })
+            });
+            
+            return await response.json();
+          } catch (error) {
+            console.error('Error sending to Telegram:', error);
+            return { ok: false };
+          }
+        }
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+        
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          
+          const formData = new FormData(contactForm);
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          
+          try {
+            const telegramResponse = await sendToTelegram(formData);
+            
+            if (telegramResponse.ok) {
+              formMessage.textContent = 'Your message has been sent successfully! We will contact you soon.';
+              formMessage.className = 'text-center text-green-600';
+              contactForm.reset();
+            } else {
+              formMessage.textContent = 'Error sending message. Please try again later.';
+              formMessage.className = 'text-center text-red-600';
+            }
+          } catch (error) {
+            formMessage.textContent = 'An error occurred. Please try again.';
+            formMessage.className = 'text-center text-red-600';
+          } finally {
+            formMessage.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send';
+            
+            setTimeout(() => {
+              formMessage.classList.add('hidden');
+            }, 5000);
+          }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
